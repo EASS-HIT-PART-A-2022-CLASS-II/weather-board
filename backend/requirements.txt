@@ -13,6 +13,7 @@ coverage==6.4.1
 cycler==0.11.0
 decorator==5.1.1
 distlib==0.3.4
+dnspython==2.2.1
 executing==0.8.3
 fastapi==0.88.0
 filelock==3.7.0
@@ -28,6 +29,7 @@ jedi==0.18.1
 kiwisolver==1.4.3
 matplotlib==3.5.2
 matplotlib-inline==0.1.3
+motor==3.1.1
 mpmath==1.2.1
 networkx==2.8.2
 numpy==1.23.3
@@ -43,6 +45,7 @@ pluggy==1.0.0
 pprintpp==0.4.0
 prompt-toolkit==3.0.30
 ptyprocess==0.7.0
+pur==7.0.0
 pure-eval==0.2.2
 py==1.11.0
 pycountry==19.8.18
@@ -50,6 +53,7 @@ pycountry-convert==0.7.2
 pycountry-un==0.1.1
 pydantic==1.10.2
 Pygments==2.12.0
+pymongo==4.3.3
 pyparsing==3.0.9
 pytest==7.1.2
 pytest-cov==3.0.0
