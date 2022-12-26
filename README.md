@@ -21,4 +21,4 @@ Make sure you have docker installed on your machine
    
 4. and now you can running the project:
 
-   docker run -ti -p 8000:8080 myimage
+   docker run -ti -p 8000:8000 myimage
