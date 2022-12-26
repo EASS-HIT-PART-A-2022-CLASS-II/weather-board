@@ -1,5 +1,5 @@
 # Weather-board
-Get live weather in all cities in israel
+Get weather for all cities in israel
 
 ## How to run the app
 ## Pre-requisites
