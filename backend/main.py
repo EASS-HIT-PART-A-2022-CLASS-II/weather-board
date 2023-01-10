@@ -7,8 +7,21 @@ from db.database import collection
 from schemas.boards_schema import boards_helper
 from bson import ObjectId
 from models.board_model import Board, ResponseMessage, ErrorMessage
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+origins = [
+    "http://localhost:8000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get('/')
@@ -40,7 +53,6 @@ async def get_all_boards():
         return ResponseMessage(boards, "Boards found successfully")
     else:
         return ErrorMessage("Error", "couldn't find the boards")
-
 
 
 @app.get("/board/{id}")
@@ -77,6 +89,6 @@ async def delete_board(id: str):
     board = collection.find({"_id": ObjectId(id)})
     deleted_board = collection.find_one_and_delete({"_id": ObjectId(id)})
     if deleted_board:
-        return ResponseMessage("Board with id: {} deleted successfully".format(id), "deleted successfully")
+        return ResponseMessage(id, "deleted successfully")
     else:
         return ErrorMessage("Error", "couldn't delete the with id: {}".format(id))

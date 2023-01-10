@@ -2,7 +2,7 @@
 def board_helper(board) -> dict:
     return {
         "id": str(board["_id"]),
-        "title": board["title"],
+        "name": board["name"],
         "cities": list(board["cities"])
     }
 

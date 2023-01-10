@@ -1,0 +1,29 @@
+version: "3.8"
+services:
+  database:
+    image: mongo
+    restart: always
+    container_name: weather-db
+    ports:
+      - "27017:27027"
+    volumes:
+      - ./mongodb/data:/data/db
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      - database
+    container_name: weather-app-backend
+    networks:
+      - weather-app-network
+    environment:
+      - db=weather
+      - db_port=27017
+
+networks:
+  weather-app-network:
+    driver: bridge
