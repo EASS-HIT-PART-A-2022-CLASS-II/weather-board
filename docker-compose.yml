@@ -24,6 +24,15 @@ services:
       - db=weather
       - db_port=27017
 
+  dev:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
+    ports:
+      - '3000:3000'
+
 networks:
   weather-app-network:
     driver: bridge
