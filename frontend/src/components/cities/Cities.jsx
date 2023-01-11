@@ -43,9 +43,7 @@ function Cities(props) {
                 ...state,
                 [event.target.name]: event.target.checked,
             }
-
             setState(newState);
-
             props.setCities(getObjKey(newState, true).map((cityName) => {
                 return cities.find((city) => city === cityName)
             }));
@@ -63,7 +61,7 @@ function Cities(props) {
     return (
         <Card style={{padding: '20px', marginTop:"5px",  height: "fit-content", width: '120px', marginLeft: "15px"}}>
             <h2 style={{display: 'flex', marginTop: "2px"}}>Cities</h2>
-            <div className="example" style={{display: 'flex', flexDirection: 'column'}}>{citiesItems}</div>
+            <div className="cities" style={{display: 'flex', flexDirection: 'column'}}>{citiesItems}</div>
         </Card>
     );
 }

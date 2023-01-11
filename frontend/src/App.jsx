@@ -44,7 +44,6 @@ function App() {
       <div style={{justifyContent: 'flex-end', display:'flex', width: "100vw", height:"100vh"}}>
           <div style={{marginRight: '20px', display:'flex', flexDirection:'row'}}>
               {Boards}
-              {/*<TestComp/>*/}
               <Board board={boards ? boards.find((board) => board.id === currentBoard) : {}} setBoard={setBoard}/>
               <Boards boards={boards} currentBoard={currentBoard} setCurrentBoard={(value)=> setCurrentBoard(value)} setBoards={setBoards}/>
           </div>

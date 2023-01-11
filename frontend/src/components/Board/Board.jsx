@@ -21,7 +21,6 @@ function Board(props) {
         };
         const response = await fetch('http://localhost:8000/citiesWeather', requestOptions);
         console.log(currentWeatherByCity[props.board.cities[0]]?.main.temp)
-
         setCurrentWeatherByCity(await response.json())
     }
 
@@ -55,13 +54,13 @@ function Board(props) {
                                     {city}
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                   Current Temp: {currentWeatherByCity[city]?.main.temp}
+                                   Current Temp: {currentWeatherByCity[city]?.main.temp - 273.15}
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    Min Temp: {currentWeatherByCity[city]?.main.temp_min}
+                                    Min Temp: {currentWeatherByCity[city]?.main.temp_min - 273.15}
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    Max Temp: {currentWeatherByCity[city]?.main.temp_max}
+                                    Max Temp: {currentWeatherByCity[city]?.main.temp_max - 273.25}
                                 </Typography>
                             </CardContent>
                         </Card>

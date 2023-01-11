@@ -1,7 +1,8 @@
 import {Button, Checkbox, FormControlLabel, Radio, RadioGroup} from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
-import {useEffect} from "react";
-import {Delete} from "@mui/icons-material";
+import DeleteIcon from '@mui/icons-material/Delete';
+
+
 
 function Boards(props) {
     const handleChange = (event) => {
@@ -12,7 +13,7 @@ function Boards(props) {
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name: 'New Board', cities: [] })
+            body: JSON.stringify({ name: 'Board', cities: [] })
         };
         const response = await fetch('http://localhost:8000/board', requestOptions);
         const data = await response.json();
@@ -35,6 +36,7 @@ function Boards(props) {
             {...{label: board.name}}
         />);
 
+
     return (
         <div style={{width:"200px"}}>
             <h2 style={{display: 'flex'}}>Boards</h2>
@@ -42,8 +44,8 @@ function Boards(props) {
                 <Button style={{margin: "10px"}} variant="contained" endIcon={<AddIcon />} onClick={fetchNewBoard}>
                     Add
                 </Button>
-                <Button style={{margin: "10px"}} variant="contained" endIcon={<AddIcon />} onClick={fetchDeleteBoard}>
-
+                <Button style={{margin: "10px"}} variant="contained" endIcon={<DeleteIcon />} onClick={fetchDeleteBoard}>
+                    Delete
                 </Button>
             </div>
             <RadioGroup name="controlled-radio-buttons-group"
