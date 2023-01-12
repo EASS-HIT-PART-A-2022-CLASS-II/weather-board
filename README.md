@@ -22,7 +22,13 @@ Make sure you have docker installed on your machine
    docker pull mongo
    ```
    
-4. and now you can running the backend with db:
+4. And now you can running the backend with db:
    ```
    docker run -d -p 27017:27017 --name test-mongo mongo:latest
    ```
+5. The backend and db are running, now open your browser and write:
+   ```
+   http://localhost:8000/
+   ```
+
+   
