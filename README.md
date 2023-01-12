@@ -21,7 +21,6 @@ Make sure you have docker installed on your machine
    ```
    docker pull mongo
    ```
-   
 4. And now you can running the backend with db:
    ```
    docker run -d -p 27017:27017 --name test-mongo mongo:latest
@@ -30,5 +29,21 @@ Make sure you have docker installed on your machine
    ```
    http://localhost:8000/
    ```
+## Instructions for the backend and database 
+1. Open Terminal inside a desired folder and run the following command:
+   ```
+   git clone https://github.com/EASS-HIT-PART-A-2022-CLASS-II/weather-board.git
+   ```
+2. Then go inside the weather-board folder:
+   ```
+   cd frontend
+   ```
+3. Build an image:
+   ```
+   docker build -t myimage .
+   ```
+4. 
+    
+ 
 
    
