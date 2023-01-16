@@ -24,3 +24,11 @@ First, make sure you have docker installed on your machine
    ```
    http://localhost:5173/
    ```
+##Technologies
+
+Frontend: React + Vite (JavaScript)
+
+Backend: FastAPI (Python)
+
+Database: MongoDB
+   
