@@ -2,9 +2,8 @@
 Get weather for all cities in israel
 
 ## How to run the app
-## Pre-requisites
 
-Make sure you have docker installed on your machine
+first, Make sure you have docker installed on your machine
 
 ## Instructions 
 1. Open Terminal and run the following command:
