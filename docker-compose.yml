@@ -3,11 +3,11 @@ services:
   database:
     image: mongo
     restart: always
-    container_name: weather-db
+    container_name: database
     ports:
-      - "27017:27027"
-    volumes:
-      - ./mongodb/data:/data/db
+      - "27017:27017"
+    environment:
+      - DB_URL=mongodb://database
 
   backend:
     build:
@@ -21,17 +21,15 @@ services:
     networks:
       - weather-app-network
     environment:
-      - db=weather
+      - db=weather-db
       - db_port=27017
 
   dev:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    volumes:
-      - ./:/app
     ports:
-      - '3000:3000'
+      - '5173:5173'
 
 networks:
   weather-app-network:
