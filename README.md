@@ -9,7 +9,7 @@ Make sure you have docker installed on your machine
 ## Instructions for the backend and database 
 1. Open Terminal inside a desired folder and run the following command:
    ```
-   https://github.com/EASS-HIT-PART-A-2022-CLASS-II/weather-board.git
+   git clone https://github.com/EASS-HIT-PART-A-2022-CLASS-II/weather-board.git
    ```
    
 2. Then go inside the weather-board folder:
@@ -32,7 +32,7 @@ Make sure you have docker installed on your machine
 ## Instructions for the backend and database 
 1. Open Terminal inside a desired folder and run the following command:
    ```
-   https://github.com/EASS-HIT-PART-A-2022-CLASS-II/weather-board.git
+   git clone https://github.com/EASS-HIT-PART-A-2022-CLASS-II/weather-board.git
    ```
 2. Then go inside the weather-board folder:
    ```
