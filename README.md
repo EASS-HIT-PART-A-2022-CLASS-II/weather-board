@@ -24,7 +24,8 @@ First, make sure you have docker installed on your machine
    ```
    http://localhost:5173/
    ```
-##Technologies
+   
+## Technologies
 
 Frontend: React + Vite (JavaScript)
 
