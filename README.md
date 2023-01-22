@@ -1,6 +1,9 @@
 # Weather-board
 Get weather for all cities in israel
 
+<img width="1474" alt="Screen Shot 5783-04-28 at 12 55 51" src="https://user-images.githubusercontent.com/100095704/213912281-118c29ea-8738-49be-9a9c-a7a50768d1b6.png">
+
+
 ## How to run the app
 
 First, make sure you have docker installed on your machine
