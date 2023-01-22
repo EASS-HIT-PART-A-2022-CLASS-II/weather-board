@@ -30,9 +30,9 @@ First, make sure you have docker installed on your machine
    
 ## Technologies
 
-Frontend: React + Vite (JavaScript)
+* Frontend: React + Vite (JavaScript)
 
-Backend: FastAPI (Python)
+* Backend: FastAPI (Python)
 
-Database: MongoDB
+* Database: MongoDB
    
