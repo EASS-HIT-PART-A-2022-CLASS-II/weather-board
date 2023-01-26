@@ -1,5 +1,8 @@
+
 # Weather Board App
 Get weather for all cities in israel
+
+https://user-images.githubusercontent.com/100095704/214924770-c350f7e9-fdb6-4e8d-a667-f0b75bade36b.mp4
 
 <img width="1474" alt="Screen Shot 5783-04-28 at 12 55 51" src="https://user-images.githubusercontent.com/100095704/213912281-118c29ea-8738-49be-9a9c-a7a50768d1b6.png">
 
